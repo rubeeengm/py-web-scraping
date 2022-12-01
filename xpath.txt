@@ -1,4 +1,4 @@
-Links = $x('//h2[@class="headline"]/a/@href').map(x => x.value)
+Links = $x('//div[contains(@class, "V")]/a[contains(@class, "kicker")]/@href').map(x => x.value)
 
 Titulo = $x('//div[@class="mb-auto"]/h2/span/text()').map(x=>x.wholeText)
 
